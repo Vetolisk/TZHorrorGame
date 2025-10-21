@@ -212,12 +212,41 @@ MonoBehaviour:
   m_Name: Sky and Fog Settings Profile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: -4077315054222706450}
-  - {fileID: 8780544939173330018}
-  - {fileID: 7254084305304132317}
-  - {fileID: -1183988859160115742}
-  - {fileID: -551824818796829529}
-  - {fileID: -7332651600546156253}
+  - {fileID: 6615830229242222395}
+--- !u!114 &6615830229242222395
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb2952b95454955ba507c3d96778a76, type: 3}
+  m_Name: VhsVol
+  m_EditorClassIdentifier: VhsFx.Runtime::VolFx.VhsVol
+  active: 1
+  _weight:
+    m_OverrideState: 1
+    m_Value: 0
+  _bleed:
+    m_OverrideState: 1
+    m_Value: 1
+  _rocking:
+    m_OverrideState: 1
+    m_Value: 0
+  _tape:
+    m_OverrideState: 0
+    m_Value: 1
+  _noise:
+    m_OverrideState: 0
+    m_Value: 0.5
+  _flickering:
+    m_OverrideState: 1
+    m_Value: 0
+  _glitch:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &7254084305304132317
 MonoBehaviour:
   m_ObjectHideFlags: 3
