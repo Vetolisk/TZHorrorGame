@@ -10,7 +10,8 @@ public class NPCMovement : MonoBehaviour
     private NavMeshAgent agent;
     private Animator _animator;
     public bool flagGetCoffee = false;
-   
+
+    public GameManager GM;
 
     private void Awake()
     {
@@ -31,6 +32,11 @@ public class NPCMovement : MonoBehaviour
         if (targetPoint != null&&flagGetCoffee)
         {
             agent.SetDestination(targetPointEND.position);
+        }
+        if (agent.remainingDistance <= agent.stoppingDistance && flagGetCoffee)
+        {
+                GM.flagEnemy = true;
+                Destroy(gameObject);      
         }
     }
 }

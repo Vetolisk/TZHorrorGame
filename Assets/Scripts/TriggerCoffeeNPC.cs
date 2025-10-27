@@ -14,7 +14,7 @@ public class TriggerCoffeeNPC : MonoBehaviour
             Destroy(other.gameObject);
             NPC.flagGetCoffee=true;
             AnimEnemy.SetBool("Scare", NPC.flagGetCoffee);
-            _AudioSource.PlayOneShot(_AudioClip);
+            //_AudioSource.PlayOneShot(_AudioClip);
         }
     }
 }
