@@ -17,6 +17,7 @@ public class CapCoffeeTrigger : MonoBehaviour
             other.gameObject.transform.localPosition = new Vector3(0.0786790848f, -0.161647797f, 0.187580109f);
             other.gameObject.transform.localRotation = Quaternion.Euler(-90,0,0);
             flag=true;
+            
         }
     }
 }
