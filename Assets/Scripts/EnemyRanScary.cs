@@ -10,9 +10,9 @@ public class EnemyRanScary : MonoBehaviour
 
 
      public Transform targetPoint;          // ссылка на игрока
-    public float attackCooldown = 3f; // интервал между атаками
+    public float attackCooldown = 1f; // интервал между атаками
     public float chaseRadius = 100;        // радиус преследования
-    public float attackRadius = 2f;        // радиус атаки
+    public float attackRadius = 1f;        // радиус атаки
     private bool isAttacking = false;
     private void Awake()
     {
@@ -47,7 +47,8 @@ public class EnemyRanScary : MonoBehaviour
     IEnumerator AttackRoutine()
     {
         isAttacking = true;
-        _animator.SetTrigger("Atack");
+        _animator.SetBool("Atack",true);
+        agent.isStopped=true;
         agent.speed = 0;
         // Время выполнения атаки. Можно добавить анимацию здесь
         yield return new WaitForSeconds(1); // задержка перед нанесением урона или эффектом атаки
@@ -57,6 +58,8 @@ public class EnemyRanScary : MonoBehaviour
 
         // После атаки ждем cooldown
         yield return new WaitForSeconds(attackCooldown);
+        _animator.SetBool("Atack", false);
+        agent.isStopped = false;
         agent.speed = 3.5f;
         Debug.Log("Атака завершена");
         isAttacking = false;
