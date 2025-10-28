@@ -1883,6 +1883,8 @@ MonoBehaviour:
   AnimEnemy: {fileID: 919132149106132586}
   _AudioSource: {fileID: 919132148506323966}
   _AudioClip: {fileID: 8300000, guid: ea6fd9b5e9916734093fc404ecb6507a, type: 3}
+  _AudioSourcePlayer: {fileID: 919132148506323966}
+  _AudioClipPlayer: {fileID: 8300000, guid: ef13ed25d68c6ab48880d8f4df359195, type: 3}
 --- !u!65 &90484573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46812,7 +46814,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -46915,7 +46917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &919132148553631811
 Animator:
   serializedVersion: 7
@@ -50571,7 +50573,7 @@ Transform:
   m_GameObject: {fileID: 9029266583185173060}
   serializedVersion: 2
   m_LocalRotation: {x: -0.4982803, y: -0.5017139, z: -0.50171375, w: 0.49828038}
-  m_LocalPosition: {x: 6.6016397, y: -5.866, z: 1.163104}
+  m_LocalPosition: {x: 6.6016397, y: -5.988, z: 1.163104}
   m_LocalScale: {x: 5.0898952, y: 5.089894, z: 5.089894}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -52049,8 +52051,8 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
+  m_Interpolate: 1
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!64 &7719748724003935130
 MeshCollider:
@@ -53018,8 +53020,8 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
+  m_Interpolate: 1
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &9029266583185173062
 BoxCollider:

@@ -6,6 +6,8 @@ public class TriggerCoffeeNPC : MonoBehaviour
     public Animator AnimEnemy;
     [SerializeField] private AudioSource _AudioSource;
     [SerializeField] private AudioClip _AudioClip;
+    [SerializeField] private AudioSource _AudioSourcePlayer;
+    [SerializeField] private AudioClip _AudioClipPlayer;
     private void Start()
     {
         AnimEnemy.gameObject.SetActive(false);
@@ -20,6 +22,7 @@ public class TriggerCoffeeNPC : MonoBehaviour
             NPC.flagGetCoffee=true;
             AnimEnemy.SetBool("Scare", NPC.flagGetCoffee);
             //_AudioSource.PlayOneShot(_AudioClip);
+            _AudioSourcePlayer.PlayOneShot(_AudioClipPlayer);
         }
     }
 }
